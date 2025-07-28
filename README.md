@@ -1,14 +1,13 @@
-# Yusuf Star - Complete Mail & DNS Management System
+# Freedom - Complete Mail & DNS Management System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black.svg)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
-[![Status](https://img.shields.io/badge/Status-Development%20In%20Progress-orange.svg)](https://github.com/yusufstar/yusuf-star)
 
 ## 🎯 Project Overview
 
-**Yusuf Star** is a comprehensive, self-hosted email and DNS management platform that provides complete control over your digital communications infrastructure. Built with modern technologies and enterprise-grade components, it offers a fully independent solution for organizations and individuals who value privacy, security, and complete data sovereignty.
+**Freedom** is a comprehensive, self-hosted email and DNS management platform that provides complete control over your digital communications infrastructure. Built with modern technologies and enterprise-grade components, it offers a fully independent solution for organizations and individuals who value privacy, security, and complete data sovereignty.
 
 ### 🏆 **Project Status**
 - ✅ **DNS Server**: Complete and fully functional
@@ -48,57 +47,6 @@
 - **Advanced Search**: Powerful search with filters and operators
 - **Mobile Optimized**: Perfect experience on all devices
 - **Offline Support**: Continue working without internet connectivity
-
----
-
-## 🏗️ System Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        External Network                        │
-│  (Internet)                                                    │
-└─────────────────────┬───────────────────────────────────────────┘
-                      │
-┌─────────────────────▼───────────────────────────────────────────┐
-│                    Traefik Load Balancer                       │
-│              (SSL/TLS Termination & Routing)                   │
-└─────────────────────┬───────────────────────────────────────────┘
-                      │
-        ┌─────────────┼─────────────┐
-        │             │             │
-┌───────▼──────┐ ┌────▼────┐ ┌──────▼──────┐
-│   Admin      │ │  Mail   │ │   DNS       │
-│   Panel      │ │ Client  │ │  Server     │
-│ (Next.js)    │ │(Next.js)│ │(PowerDNS)   │
-│  [DEV]       │ │[PLANNED]│ │   [READY]   │
-└──────────────┘ └─────────┘ └─────────────┘
-        │             │             │
-        └─────────────┼─────────────┘
-                      │
-        ┌─────────────┼─────────────┐
-        │             │             │
-┌───────▼──────┐ ┌────▼────┐ ┌──────▼──────┐
-│   WildDuck   │ │  Haraka │ │   ZoneMTA   │
-│  Mail Server │ │   SMTP  │ │ Mail Transfer│
-│   [READY]    │ │ [READY] │ │   [READY]   │
-└──────────────┘ └─────────┘ └─────────────┘
-        │             │             │
-        └─────────────┼─────────────┘
-                      │
-              ┌───────▼──────┐
-              │   RSpamd     │
-              │ Anti-Spam    │
-              │   [READY]    │
-              └──────────────┘
-                      │
-        ┌─────────────┼─────────────┐
-        │             │             │
-┌───────▼──────┐ ┌────▼────┐ ┌──────▼──────┐
-│   MongoDB    │ │  Redis  │ │    MySQL    │
-│  (Mail Data) │ │(Cache)  │ │ (DNS Data)  │
-│   [READY]    │ │ [READY] │ │   [READY]   │
-└──────────────┘ └─────────┘ └─────────────┘
-```
 
 ---
 
@@ -222,25 +170,29 @@ This is a private project currently in active development. The system architectu
 
 ## 📸 Screenshots & Demo
 
-### Admin Panel Interface
-![Admin Panel Dashboard](docs/images/admin-dashboard.png)
-*Modern admin interface with real-time monitoring*
+### 🎛️ Admin Panel - DNS Zone Management
+![DNS Zone Management Interface](images/freedom-admin-dns-zone.png)
+*Complete DNS zone management interface with security protection (red lines indicate attack prevention measures)*
 
-### DNS Management
-![DNS Zone Management](docs/images/dns-management.png)
-*Comprehensive DNS zone and record management*
+### 🔧 Admin Panel - DNS Records Management
+![DNS Records Management Interface](images/freedom-admin-dns-records.png)
+*Advanced DNS records management with comprehensive security features (red lines show attack protection zones)*
 
-### Mail User Management
-![Mail User Interface](docs/images/mail-users.png)
-*Complete mail user administration*
+### 📧 Admin Panel - Mail User Management
+![Mail User Management Interface](images/freedom-admin-mail-users.png)
+*Complete mail user administration panel with user-friendly interface (red lines indicate security boundaries)*
 
-### System Monitoring
-![System Monitoring](docs/images/system-monitoring.png)
-*Real-time system metrics and container health*
+### 🔄 Admin Panel - Mail Status Checker Modal
+![Mail Status Checker Modal](images/freedom-admin-mail-status-checker-modal.png)
+*Real-time mail status monitoring modal with security protection (red lines show attack prevention measures)*
 
-### Mobile Responsive Design
-![Mobile Interface](docs/images/mobile-interface.png)
-*Fully responsive design for all devices*
+### ⚙️ Admin Panel - Mail DNS Records Automation Modal
+![Mail DNS Records Automation Modal](images/freedom-admin-mail-automate-dns-records-modal.png)
+*Automated DNS records management modal with enhanced security (red lines indicate attack protection zones)*
+
+### 📊 Admin Panel - System Monitor Dashboard
+![System Monitor Dashboard](images/freedom-admin-system-monitor.png)
+*Comprehensive system monitoring dashboard with real-time metrics and security monitoring (red lines show attack prevention boundaries)*
 
 ---
 
@@ -287,16 +239,6 @@ This is a private project currently in active development. The system architectu
 - **Mobile App**: Native mobile applications
 - **API Documentation**: Comprehensive API docs
 - **Multi-tenant Support**: Enterprise features
-
----
-
-## 📚 Documentation
-
-- **[Architecture Guide](docs/ARCHITECTURE.md)**: Detailed system architecture
-- **[Installation Guide](docs/INSTALLATION.md)**: Step-by-step setup
-- **[Security Guide](docs/SECURITY.md)**: Security best practices
-- **[Contributing Guide](docs/CONTRIBUTING.md)**: Development guidelines
-- **[Roadmap](docs/ROADMAP.md)**: Development plans
 
 ---
 
