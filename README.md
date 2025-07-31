@@ -194,6 +194,22 @@ This is a private project currently in active development. The system architectu
 ![System Monitor Dashboard](images/freedom-admin-system-monitor.png)
 *Comprehensive system monitoring dashboard with real-time metrics and security monitoring (red lines show attack prevention boundaries)*
 
+
+---
+
+## 🖥️ Client Screenshots
+
+### 🔐 Client Login Screen
+![Client Login](images/freedom-client-login.png)
+*Modern, minimal login interface for user authentication.*
+
+### 📬 Client Mail Display
+![Client Mail Display](images/freedom-client-mail-display.png)
+*Gmail-like inbox and mail reading experience, with real-time updates.*
+
+### 📝 Client Register Screen
+![Client Register](images/freedom-client-register.png)
+*User registration form with a clean, dark-themed UI.*
 ---
 
 ## 🎯 Use Cases
